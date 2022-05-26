@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C6741154-D020-4A55-B250-226E246F1D7F}"
+	ProjectSection(SolutionItems) = preProject
+		src\docker-compose.yaml = src\docker-compose.yaml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppProducer", "src\AppProducer\AppProducer.csproj", "{6FE87BB8-F9C7-47D0-86FC-12E44A5B9CDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FE87BB8-F9C7-47D0-86FC-12E44A5B9CDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FE87BB8-F9C7-47D0-86FC-12E44A5B9CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FE87BB8-F9C7-47D0-86FC-12E44A5B9CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FE87BB8-F9C7-47D0-86FC-12E44A5B9CDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6FE87BB8-F9C7-47D0-86FC-12E44A5B9CDB} = {C6741154-D020-4A55-B250-226E246F1D7F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7DAE05AB-4A9D-4CC7-8B14-306541012BBE}
+	EndGlobalSection
+EndGlobal

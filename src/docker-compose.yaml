@@ -23,6 +23,21 @@ services:
       - MESSAGE_BROKER_URL=amqp://guest:guest@message-broker:5672/
     depends_on:
       - message-broker
+   
+  consumer:
+    build:
+        context: ./AppConsumer
+    container_name: email-shooter-consumer
+    networks:
+        -  email-shooter-net
+    environment:
+      - MESSAGE_BROKER_QUEUE_DEFAULT=EMAIL_QUEUE
+      - MESSAGE_BROKER_URL=amqp://guest:guest@message-broker:5672/
+      - ASPNETCORE_URLS=http://+:80
+    ports:
+      - "49154:80"
+    depends_on:
+      - message-broker
 
 networks:
   email-shooter-net:

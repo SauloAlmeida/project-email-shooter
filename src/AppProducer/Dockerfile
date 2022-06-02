@@ -13,6 +13,6 @@ RUN dotnet publish -c Release -o /app/publish
 
 FROM runtime as final
 WORKDIR /app
-COPY --from=PUBLISH /app/publish .
+COPY --from=publish /app/publish .
 
 ENTRYPOINT ["dotnet", "AppProducer.dll"]

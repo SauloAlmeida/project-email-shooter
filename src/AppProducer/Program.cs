@@ -2,6 +2,8 @@
 using AppProducer.Application.Models;
 using AppProducer.Infrastructure;
 using Microsoft.Extensions.DependencyInjection;
+using Newtonsoft.Json;
+using System.Text;
 
 Console.WriteLine("App Started!");
 

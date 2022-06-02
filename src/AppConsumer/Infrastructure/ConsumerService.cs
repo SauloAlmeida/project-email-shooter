@@ -75,8 +75,6 @@ namespace AppConsumer.Infrastructure
 
                 var emailModel = GetEmailModelByEvent(eventArgs);
 
-                Console.WriteLine("Email model - " + emailModel?.ToString());
-
                 NotifyUser(emailModel);
 
                 Channel.BasicAck(eventArgs.DeliveryTag, multiple: false);
